@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer sale</title>
+    <link rel="shortcut icon" href="./images/Summer 1.png" type="image/x-icon">
+    <!-- Tailwind and Daisyui Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        textColor: '#111111',
+                        pinkColor: '#E527B2',
+                        ratingColor: '#FFC107',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-[#F9F6E2]">
+        <div class="w-11/12 mx-auto flex flex-col md:flex-row lg:flex-row items-center gap-12 py-8 lg:py-4">
+            <div class="flex-1">
+                <h3 class="text-3xl text-textColor text-center font-medium pt-3">---SALE FEVER---</h3>
+                <h1 class=" text-4xl md:text-5xl lg:text-6xl text-textColor text-center font-bold my-6 md:my-10">Purchase TK 200 or above & get <span
+                        class="text-pinkColor">20% off</span></h1>
+                <div class="flex flex-row gap-3 lg:gap-5 justify-center items-center">
+                    <h4 class="text-xl lg:text-2xl text-textColor font-medium">Use Promo Code</h4>
+                    <span class="bg-pinkColor text-xl lg:text-2xl px-4 py-2 lg:px-7 text-white border-0 rounded-lg  cursor-text select-all">SELL200</span>
+                </div>
+            </div>
+            <div class="flex-1">
+                <img src="./images/Summer 1.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main class=" bg-[#F8F8F8] py-20">
+        <section class="w-11/12 mx-auto ">
+            <h2 class="text-[40px] text-textColor text-center md:text-left font-semibold mb-8">Kitchenware</h2>
+            <div class=" flex flex-col flex-wrap md:flex-row lg:flex-row  gap-6 relative">
+                <div class="flex-1">
+
+                    <!-- Kitchenware -->
+                    <div class=" grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
+                        <!--Product Items one -->
+                        <div>
+                            <div onclick="singleProduct(this)" class="p-5 bg-white rounded-lg text-center ">
+                                <div class="bg-[#1111110D] py-6 rounded-lg mb-5">
+                                    <img class="block mx-auto " src="/images/prod1.png" alt="Shoes" />
+                                </div>
+                                <div class="rating text-center">
+                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-ratingColor" />
+                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-ratingColor" />
+                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-ratingColor"
+                                        checked />
+                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-ratingColor" />
+                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-ratingColor" />
+                                </div>
+                                <h1 class="text-xl text-textColor font-semibold my-2">K. Accessories</h1>
+                                <h2 class="text-xl text-gray-500 font-normal">39.00 TK</h2>
+
+                            </div>
+                        </div>
+
+
+                        <!--Product Items two -->
+                        <div>
+                            <div onclick="singleProduct(this)" class="p-5 bg-white rounded-lg text-center ">
+                                <div class="bg-[#1111110D] py-6 rounded-lg mb-5">
+                                    <img class="block mx-auto " src="/images/prod2.png" alt="Shoes" />
+                                </div>
+                                <div class="rating text-center">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingColor" checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingColor" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingColor" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingColor" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingColor" />
+                                </div>
+    
+                                <h1 class="text-xl text-textColor font-semibold my-2">Square Board</h1>
+                                <h2 class="text-xl text-gray-500 font-normal">25.00 TK</h2>
+                            </div>
+                        </div>
+
+                        <!--Product Items three -->
+                       <div>
+                        <div onclick="singleProduct(this)" class="p-5 bg-white rounded-lg text-center ">
+                            <div class="bg-[#1111110D] py-6 rounded-lg mb-5">
+                                <img class="block mx-auto " src="/images/prod3.png" alt="Shoes" />
+                            </div>
+                            <div class="rating text-center">
+                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-ratingColor" />
+                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-ratingColor" />
+                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-ratingColor" />
+                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-ratingColor" checked/>
+                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-ratingColor"  />
+                            </div>
+                            <h1 class="text-xl text-textColor font-semibold my-2">Home Cooker</h1>
+                            <h2 class="text-xl text-gray-500 font-normal">49.00 TK</h2>
+                        </div>
+                       </div>
+                    </div>
+
+
+                    <!-- Sportswear Category -->
+                    <h2 class="text-[40px] text-textColor text-center md:text-left font-semibold mt-14 mb-8">Sportswear</h2>
+                    <div class=" grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
+                        <!--Product Items one -->
+
+                        <div>
+                            <div onclick="singleProduct(this)" class="p-5 bg-white rounded-lg text-center ">
+                                <div class="bg-[#1111110D] py-6 rounded-lg mb-5">
+                                    <img class="block mx-auto " src="/images/prod4.png" alt="Shoes" />
+                                </div>
+                                <div class="rating text-center">
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-ratingColor" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-ratingColor" checked />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-ratingColor" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-ratingColor" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-ratingColor" />
+                                </div>
+                                <h1 class="text-xl text-textColor font-semibold my-2">Sports Back Cap</h1>
+                                <h2 class="text-xl text-gray-500 font-normal">49.00 TK</h2>
+                            </div>
+                        </div>
+
+                        <!--Product Items two -->
+                        <div>
+                            <div onclick="singleProduct(this)" class="p-5 bg-white rounded-lg text-center ">
+                                <div class="bg-[#1111110D] py-6 rounded-lg mb-5">
+                                    <img class="block mx-auto " src="/images/prod5.png" alt="Shoes" />
+                                </div>
+                                <div class="rating text-center">
+                                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-ratingColor" />
+                                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-ratingColor"  />
+                                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-ratingColor" />
+                                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-ratingColor" checked />
+                                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-ratingColor" />
+                                </div>
+                                <h1 class="text-xl text-textColor font-semibold my-2">Full Jersey Set</h1>
+                                <h2 class="text-xl text-gray-500 font-normal">69.00 TK</h2>
+                            </div>
+                        </div>
+
+                        <!--Product Items three -->
+                        <div>
+                            <div onclick="singleProduct(this)" class="p-5 bg-white rounded-lg text-center ">
+                                <div class="bg-[#1111110D] py-6 rounded-lg mb-5">
+                                    <img class="block mx-auto " src="/images/prod6.png" alt="Shoes" />
+                                </div>
+                                <div class="rating text-center">
+                                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-ratingColor" />
+                                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-ratingColor"  />
+                                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-ratingColor" checked/>
+                                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-ratingColor"  />
+                                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-ratingColor" />
+                                </div>
+                                <h1 class="text-xl text-textColor font-semibold my-2">Sports cates</h1>
+                                <h2 class="text-xl text-gray-500 font-normal">159.00 TK</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Furniture Category -->
+                    <h2 class="text-[40px] text-textColor text-center md:text-left font-semibold mt-14 mb-7">Furniture</h2>
+                    <div class=" grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
+                        <!--Product Items one -->
+
+                        <div>
+                            <div onclick="singleProduct(this)" class="p-5 bg-white rounded-lg text-center ">
+                                <div class="bg-[#1111110D] py-6 rounded-lg mb-5">
+                                    <img class="block mx-auto " src="/images/prod7.png" alt="Shoes" />
+                                </div>
+                                <div class="rating text-center">
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-ratingColor" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-ratingColor" checked />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-ratingColor" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-ratingColor" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-ratingColor" />
+                                </div>
+                                <h1 class="text-xl text-textColor font-semibold my-2">Single Relax Chair</h1>
+                                <h2 class="text-xl text-gray-500 font-normal">185.00 TK</h2>
+                            </div>
+                        </div>
+
+                        <!--Product Items two -->
+                        <div>
+                            <div onclick="singleProduct(this)" class="p-5 bg-white rounded-lg text-center ">
+                                <div class="bg-[#1111110D] py-6 rounded-lg mb-5">
+                                    <img class="block mx-auto " src="/images/prod8.png" alt="Shoes" />
+                                </div>
+                                <div class="rating text-center">
+                                    <input type="radio" name="rating-8" class="mask mask-star-2 bg-ratingColor" />
+                                    <input type="radio" name="rating-8" class="mask mask-star-2 bg-ratingColor" />
+                                    <input type="radio" name="rating-8" class="mask mask-star-2 bg-ratingColor" />
+                                    <input type="radio" name="rating-8" class="mask mask-star-2 bg-ratingColor"  />
+                                    <input type="radio" name="rating-8" class="mask mask-star-2 bg-ratingColor" checked/>
+                                </div>
+                                <h1 class="text-xl text-textColor font-semibold my-2">Children play</h1>
+                                <h2 class="text-xl text-gray-500 font-normal">299.00 TK</h2>
+                            </div>
+                        </div>
+
+                        <!--Product Items three -->
+                        <div>
+                            <div onclick="singleProduct(this)" class="p-5 bg-white rounded-lg text-center ">
+                                <div class="bg-[#1111110D] py-6 rounded-lg mb-5">
+                                    <img class="block mx-auto " src="/images/prod9.png" alt="Shoes" />
+                                </div>
+                                <div class="rating text-center">
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-ratingColor" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-ratingColor" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-ratingColor" checked/>
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-ratingColor" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-ratingColor" />
+                                </div>
+                                <h1 class="text-xl text-textColor font-semibold my-2">Flexible Sofa</h1>
+                                <h2 class="text-xl text-gray-500 font-normal">339.00 TK</h2>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- Product end section -->
+
+
+                <!-- Product calculate section -->
+                <div class="w-full md:w-[300px] md:sticky top-0">
+                    <div class="bg-white rounded-lg px-6 py-7">
+                        <h1 class="text-xl text-textColor font-semibold my-2 ">Have coupon?</h1>
+                        <input id="discount_input" class="text-xl font-normal border p-3 outline-0 w-56 md:w-40 rounded-l-lg" type="text"
+                            placeholder="Coupon code">
+                            
+                        <button  id="coupon_apply" class="text-xl font-semibold py-3 px-4 border-pinkColor border bg-pinkColor rounded-r-lg text-white -ml-[6px] disabled:bg-gray-400 disabled:opacity-75 disabled:border-gray-400" disabled >Apply</button>
+                    </div>
+
+                    <div class="bg-white rounded-lg px-6 py-7 mt-7">
+                        <div id="selection_item_box" class="text-xl text-textColor font-normal">
+                            
+                        </div>
+                        <hr class="mb-5 mt-3">
+                        <h1 class="text-xl text-textColor font-normal my-2 ">Total price: <span 
+                                class="text-xl text-gray-400 font-normal"><span id="Total_item_Price">00</span> TK</span></h1>
+                        <h1 class="text-xl text-textColor font-normal my-2 ">Discount: <span
+                                class="text-xl text-gray-400 font-normal"><span id="discount_price">00</span> tk</span></h1>
+                        <h1 class="text-xl text-textColor font-normal my-2 ">Total: <span
+                                class="text-xl text-[#11111180] font-normal"><span id="Total_Price">00</span> tk</span></h1>
+                        <hr class="my-5">
+
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button id="Purchase_btn" onclick="my_modal_1.showModal()" class="text-xl font-semibold py-3 px-4 border-pinkColor border bg-pinkColor rounded-lg text-white w-full block -mb-12 disabled:bg-gray-400 disabled:opacity-75 disabled:border-gray-400" disabled >Make
+                            Purchase</button>
+                        
+                        <dialog id="my_modal_1" class="modal text-center ">
+                            <form method="dialog" class="modal-box py-10">
+                                <img class="block mx-auto" src="./images/congo.png" alt="">
+                                <h3 class="font-bold text-5xl mt-4">Congratulations</h3>
+                                <p class="py-4 mb-4 text-xl font-normal text-gray-400 ">Your Purchase the product</p>
+                                
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <a href="/index.html" class="text-xl font-semibold py-3 px-4 border-pinkColor border bg-pinkColor rounded-lg text-white mb-4">GoHome<a>             
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
